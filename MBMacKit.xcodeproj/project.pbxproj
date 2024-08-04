@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C008F53E2C5F6119009231B3 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C008F53D2C5F6119009231B3 /* NavigationViewController.swift */; };
 		C0FD27452C5F527500BE077C /* MBMacKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C0FD27442C5F527500BE077C /* MBMacKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C008F53D2C5F6119009231B3 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		C0FD27412C5F527500BE077C /* MBMacKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBMacKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FD27442C5F527500BE077C /* MBMacKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBMacKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				C0FD27442C5F527500BE077C /* MBMacKit.h */,
+				C008F53D2C5F6119009231B3 /* NavigationViewController.swift */,
 			);
 			path = MBMacKit;
 			sourceTree = "<group>";
@@ -93,6 +96,7 @@
 				TargetAttributes = {
 					C0FD27402C5F527500BE077C = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 				};
 			};
@@ -129,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C008F53E2C5F6119009231B3 /* NavigationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -287,6 +293,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -295,6 +302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
