@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C008F53E2C5F6119009231B3 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C008F53D2C5F6119009231B3 /* NavigationViewController.swift */; };
+		C008F53E2C5F6119009231B3 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C008F53D2C5F6119009231B3 /* NavigationController.swift */; };
 		C0FD27452C5F527500BE077C /* MBMacKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C0FD27442C5F527500BE077C /* MBMacKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C008F53D2C5F6119009231B3 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		C008F53D2C5F6119009231B3 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		C0FD27412C5F527500BE077C /* MBMacKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBMacKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FD27442C5F527500BE077C /* MBMacKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBMacKit.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				C0FD27442C5F527500BE077C /* MBMacKit.h */,
-				C008F53D2C5F6119009231B3 /* NavigationViewController.swift */,
+				C008F53D2C5F6119009231B3 /* NavigationController.swift */,
 			);
 			path = MBMacKit;
 			sourceTree = "<group>";
@@ -133,7 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C008F53E2C5F6119009231B3 /* NavigationViewController.swift in Sources */,
+				C008F53E2C5F6119009231B3 /* NavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
