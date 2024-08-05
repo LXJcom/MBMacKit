@@ -36,10 +36,30 @@ class NavigationController: NSViewController {
     public var root : NSViewController?
     /// 是否正在动画中
     public var isAnimation : Bool = false
+    /// 动画
+    public var animator : MBNavigationAnimation = MBNavigationAnimation()
+    /// 动画
+    public var contentView : NSView = NSView()
     
     
+    override func loadView() {
+        super.loadView()
+        self.view.addSubview(self.contentView)
+        updateFrame()
+        contentView.wantsLayer = true
+        contentView.layer?.backgroundColor = NSColor.white.cgColor
+
+    }
+   
+    /// 更新约束
+    func updateFrame(){
+        contentView.translatesAutoresizingMaskIntoConstraints = false
+        contentView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        contentView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        contentView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        contentView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+    }
      // MARK: - 方法
-    
     /// 压栈方法
     /// - Parameters:
     ///   - vc: 压栈控制器
@@ -76,4 +96,9 @@ class NavigationController: NSViewController {
     public func toRoot(by  animated : Bool? = true , for animationType : NavigationControllerAnimation?){
       }
     
+}
+extension NavigationController {
+     class MBNavigationAnimation : NSObject {
+        
+    }
 }

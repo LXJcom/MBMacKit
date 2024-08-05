@@ -7,19 +7,20 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
 
+class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        navigation = NavigationController()
+        view.addSubview(navigation.view)
+        navigation.view.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
+        navigation.view.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+        navigation.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+        navigation.view.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
     }
 
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
 
 
 }
