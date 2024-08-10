@@ -11,17 +11,22 @@ import Cocoa
 class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        navigation = NavigationController()
-        view.addSubview(navigation.view)
-        navigation.view.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
-        navigation.view.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
-        navigation.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
-        navigation.view.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
+        view.wantsLayer = true
+        view.layer?.backgroundColor = randomColor().cgColor
+        self.view.mbAddArea()
     }
-
-
-
+    override func mouseUp(with event: NSEvent) {
+        super.mouseUp(with: event)
+       let vc = ViewController()
+//        vc.view.wantsLayer = true
+//        vc.view.layer?.backgroundColor = NSColor.green.cgColor
+        navigation.push(to: vc)
+    }
+    func randomColor() -> NSColor {
+        let red = CGFloat(arc4random_uniform(256)) / 255.0
+        let green = CGFloat(arc4random_uniform(256)) / 255.0
+        let blue = CGFloat(arc4random_uniform(256)) / 255.0
+        return NSColor(red: red, green: green, blue: blue, alpha: 1.0)
+    }
 }
 

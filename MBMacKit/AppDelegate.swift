@@ -15,10 +15,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
-        myWindow.setFrame(NSRect(x:100, y: 100, width: 100, height: 100), display: true)
-//        myWindow.orderOut(nil)
+        let VC = NavigationController()
+        VC.root = ViewController()
+//        VC.root?.view.wantsLayer = true
+//        VC.root?.view.layer?.backgroundColor = NSColor.red./*c*/gColor
+        myWindow.contentViewController = VC
+        myWindow.setFrame(NSRect(x:100, y: 100, width: 700, height: 400), display: true)
         myWindow.makeKeyAndOrderFront(nil)
-        myWindow.contentView?.addSubview(ViewController().view)
+        //        myWindow.contentView?.addSubview(ViewController().view)
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
