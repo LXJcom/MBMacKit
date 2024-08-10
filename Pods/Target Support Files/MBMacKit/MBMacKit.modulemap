@@ -1,0 +1,6 @@
+framework module MBMacKit {
+  umbrella header "MBMacKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

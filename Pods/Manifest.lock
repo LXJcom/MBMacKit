@@ -1,0 +1,16 @@
+PODS:
+  - MBMacKit (0.0.9)
+
+DEPENDENCIES:
+  - MBMacKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - MBMacKit
+
+SPEC CHECKSUMS:
+  MBMacKit: 5721d42450e3e5b680ab5b2371d77f416b5c354b
+
+PODFILE CHECKSUM: f28b8ef5b110dfb3e5052a2557a9e3da4898edd2
+
+COCOAPODS: 1.12.1
