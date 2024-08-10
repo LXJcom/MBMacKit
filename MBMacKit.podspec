@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "MBMacKit"
-  spec.version      = "0.0.6"
+  spec.version      = "0.0.8"
   spec.summary      = "A utility library for macOS applications."
   spec.description  = <<-DESC
                        MBMacKit is a comprehensive utility library designed for macOS applications. It provides a range of tools and functionalities to streamline development processes.
