@@ -34,17 +34,17 @@ enum MBKCategory : String {
 }
  // MARK: - move
 extension MBAnimation {
-    class func maMoveFrom(value : CGPoint? , byValue : CGPoint?, toValue : CGPoint?) -> CABasicAnimation{
+    class func maMoveFrom(value : CGPoint? , byValue : CGPoint? = nil, toValue : CGPoint? = nil) -> CABasicAnimation{
         let ani = mAFrom(category: .position)
         _ma(ani: ani , from: value, by: byValue, to: toValue)
         return ani
     }
-      class func mbMoveXFrom(value : Float, byValue : Float?, toValue : Float?) -> CABasicAnimation{
+      class func mbMoveXFrom(value : Float, byValue : Float? = nil , toValue : Float? = nil ) -> CABasicAnimation{
         let ani = mAFrom(category: .positionX)
         _ma(ani: ani , from: value, by: byValue, to: toValue)
         return ani
     }
-    class func mbMoveYFrom(value : Float, byValue : Float? , toValue : Float?) -> CABasicAnimation{
+    class func mbMoveYFrom(value : Float, byValue : Float? = nil , toValue : Float? = nil) -> CABasicAnimation{
         let ani = mAFrom(category: .positionY)
         _ma(ani: ani , from: value, by: byValue, to: toValue)
         return ani
@@ -76,12 +76,12 @@ extension MBAnimation {
 }
  // MARK: - opcity
 extension MBAnimation {
-    class func mbFadeOut(value : Float? , byValue : Float?, toValue : Float? = 0.0) -> CABasicAnimation{
+    class func mbFadeOut(value : Float? = nil , byValue : Float? = nil, toValue : Float? = 0.0) -> CABasicAnimation{
         let ani = mAFrom(category: .opacity)
         _ma(ani: ani , from: value, by: byValue, to: toValue)
         return ani
     }
-  class func mbFadeIn(value : Float?, byValue : Float?, toValue : Float? = 1.0) -> CABasicAnimation{
+  class func mbFadeIn(value : Float? = nil, byValue : Float? = nil, toValue : Float? = 1.0) -> CABasicAnimation{
         let ani = mAFrom(category: .opacity)
         _ma(ani: ani , from: value, by: byValue, to: toValue)
         return ani
