@@ -52,7 +52,7 @@ extension MBAnimation {
 }
  // MARK: - rotation
 extension MBAnimation {
-    class func mbRotation(value : Float , byValue : Float? , toValue :Float?) -> CABasicAnimation {
+    class func mbRotation(value : Float , byValue : Float? = nil, toValue :Float? = nil) -> CABasicAnimation {
         let ani = mAFrom(category: .rotation)
         _ma(ani: ani , from: value, by: byValue, to: toValue)
         return ani
@@ -60,7 +60,7 @@ extension MBAnimation {
 }
  // MARK: - bounds
 extension MBAnimation {
-    class func mbBounds(value : Float , byValue : Float? , toValue :Float?) -> CABasicAnimation {
+    class func mbBounds(value : Float , byValue : Float? = nil, toValue :Float? = nil) -> CABasicAnimation {
         let ani = mAFrom(category: .bounds)
         _ma(ani: ani , from: value, by: byValue, to: toValue)
         return ani
@@ -68,7 +68,7 @@ extension MBAnimation {
 }
  // MARK: - scale
 extension MBAnimation {
-    class func mbScale(value : Float , byValue : Float? , toValue :Float?) -> CABasicAnimation {
+    class func mbScale(value : Float , byValue : Float? = nil, toValue :Float? = nil) -> CABasicAnimation {
         let ani = mAFrom(category: .scale)
         _ma(ani: ani , from: value, by: byValue, to: toValue)
         return ani
