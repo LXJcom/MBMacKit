@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C02EE4692C67945500AD16A6 /* MBAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02EE4682C67945500AD16A6 /* MBAnimation.swift */; };
 		C02EE46B2C679F0900AD16A6 /* MBViewCatagory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02EE46A2C679F0900AD16A6 /* MBViewCatagory.swift */; };
+		C02EE46D2C6893C100AD16A6 /* NSView+MBAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02EE46C2C6893C100AD16A6 /* NSView+MBAnimation.swift */; };
 		C04D509B2C5FAF50003B7135 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04D509A2C5FAF50003B7135 /* AppDelegate.swift */; };
 		C04D509D2C5FAF50003B7135 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04D509C2C5FAF50003B7135 /* ViewController.swift */; };
 		C04D509F2C5FAF51003B7135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C04D509E2C5FAF51003B7135 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		C02EE4682C67945500AD16A6 /* MBAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBAnimation.swift; sourceTree = "<group>"; };
 		C02EE46A2C679F0900AD16A6 /* MBViewCatagory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBViewCatagory.swift; sourceTree = "<group>"; };
+		C02EE46C2C6893C100AD16A6 /* NSView+MBAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSView+MBAnimation.swift"; sourceTree = "<group>"; };
 		C04D50972C5FAF50003B7135 /* MBMacKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBMacKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C04D509A2C5FAF50003B7135 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C04D509C2C5FAF50003B7135 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				C04D50A92C5FAF8C003B7135 /* NavigationController.swift */,
 				C02EE4682C67945500AD16A6 /* MBAnimation.swift */,
 				C02EE46A2C679F0900AD16A6 /* MBViewCatagory.swift */,
+				C02EE46C2C6893C100AD16A6 /* NSView+MBAnimation.swift */,
 			);
 			path = MBMacKit;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C04D509D2C5FAF50003B7135 /* ViewController.swift in Sources */,
+				C02EE46D2C6893C100AD16A6 /* NSView+MBAnimation.swift in Sources */,
 				C04D50AB2C5FAF8C003B7135 /* NavigationController.swift in Sources */,
 				C02EE46B2C679F0900AD16A6 /* MBViewCatagory.swift in Sources */,
 				C04D509B2C5FAF50003B7135 /* AppDelegate.swift in Sources */,

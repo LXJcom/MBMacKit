@@ -8,7 +8,6 @@
 import Cocoa
 
 fileprivate var MBViewControllerAnimatorDelegate_isPush: UInt8 = 0
-fileprivate let kMBRecommondAnimationDuration: CFTimeInterval = 0.35
 typealias MBanimation = NavigationController.MBNavigationAnimationType
 @objc protocol MBViewControllerAnimatorDelegate {
     func animation(from view : NSView , type  animation : NavigationController.NavigationControllerAnimation) -> CABasicAnimation!

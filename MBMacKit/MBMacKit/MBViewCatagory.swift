@@ -6,7 +6,6 @@
 //
 
 import AppKit
-
 extension NSView {
     func mbAddArea ( options : NSTrackingArea.Options? = nil , owner : Any? = nil) {
         let areas = self.trackingAreas

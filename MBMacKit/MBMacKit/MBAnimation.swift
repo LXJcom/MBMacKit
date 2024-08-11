@@ -32,32 +32,73 @@ enum MBKCategory : String {
         ani.toValue = to
     }
 }
-
+ // MARK: - move
 extension MBAnimation {
-    class func mbFadeOut() -> CABasicAnimation{
-        let ani = mAFrom(category: .opacity)
-        _ma(ani: ani , from: nil, by: nil, to: 0)
+    class func maMoveFrom(value : CGPoint? , byValue : CGPoint?, toValue : CGPoint?) -> CABasicAnimation{
+        let ani = mAFrom(category: .position)
+        _ma(ani: ani , from: value, by: byValue, to: toValue)
         return ani
     }
-  class func mbFadeIn() -> CABasicAnimation{
-        let ani = mAFrom(category: .opacity)
-        _ma(ani: ani , from: nil, by: nil, to: 1)
-        return ani
-    }
-    class func mbFadeIn(value : Float) -> CABasicAnimation{
-        let ani = mAFrom(category: .opacity)
-        _ma(ani: ani , from: value, by: nil, to: 1)
-        return ani
-    }
-    class func mbMoveXFrom(value : Float) -> CABasicAnimation{
+      class func mbMoveXFrom(value : Float, byValue : Float?, toValue : Float?) -> CABasicAnimation{
         let ani = mAFrom(category: .positionX)
-        _ma(ani: ani , from: value, by: nil, to: nil)
+        _ma(ani: ani , from: value, by: byValue, to: toValue)
         return ani
     }
-   class func mbMoveYFrom(value : Float) -> CABasicAnimation{
+    class func mbMoveYFrom(value : Float, byValue : Float? , toValue : Float?) -> CABasicAnimation{
         let ani = mAFrom(category: .positionY)
-        _ma(ani: ani , from: value, by: nil, to: nil)
+        _ma(ani: ani , from: value, by: byValue, to: toValue)
         return ani
     }
-    
+}
+ // MARK: - rotation
+extension MBAnimation {
+    class func mbRotation(value : Float , byValue : Float? , toValue :Float?) -> CABasicAnimation {
+        let ani = mAFrom(category: .rotation)
+        _ma(ani: ani , from: value, by: byValue, to: toValue)
+        return ani
+    }
+}
+ // MARK: - bounds
+extension MBAnimation {
+    class func mbBounds(value : Float , byValue : Float? , toValue :Float?) -> CABasicAnimation {
+        let ani = mAFrom(category: .bounds)
+        _ma(ani: ani , from: value, by: byValue, to: toValue)
+        return ani
+    }
+}
+ // MARK: - scale
+extension MBAnimation {
+    class func mbScale(value : Float , byValue : Float? , toValue :Float?) -> CABasicAnimation {
+        let ani = mAFrom(category: .scale)
+        _ma(ani: ani , from: value, by: byValue, to: toValue)
+        return ani
+    }
+}
+ // MARK: - opcity
+extension MBAnimation {
+    class func mbFadeOut(value : Float? , byValue : Float?, toValue : Float? = 0.0) -> CABasicAnimation{
+        let ani = mAFrom(category: .opacity)
+        _ma(ani: ani , from: value, by: byValue, to: toValue)
+        return ani
+    }
+  class func mbFadeIn(value : Float?, byValue : Float?, toValue : Float? = 1.0) -> CABasicAnimation{
+        let ani = mAFrom(category: .opacity)
+        _ma(ani: ani , from: value, by: byValue, to: toValue)
+        return ani
+    }
+
+}
+ // MARK: - translate
+extension MBAnimation {
+    class func mbTransform(value : Float? , byValue : Float?, toValue : Float? = 0.0) -> CABasicAnimation{
+        let ani = mAFrom(category: .opacity)
+        _ma(ani: ani , from: value, by: byValue, to: toValue)
+        return ani
+    }
+    class func mbIdentify(value : Float?, byValue : Float?, toValue : CATransform3D? = CATransform3DIdentity) -> CABasicAnimation{
+        let ani = mAFrom(category: .opacity)
+        _ma(ani: ani , from: value, by: byValue, to: toValue)
+        return ani
+    }
+
 }
