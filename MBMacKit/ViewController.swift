@@ -17,10 +17,14 @@ class ViewController: NSViewController {
     }
     override func mouseUp(with event: NSEvent) {
         super.mouseUp(with: event)
-       let vc = ViewController()
-//        vc.view.wantsLayer = true
-//        vc.view.layer?.backgroundColor = NSColor.green.cgColor
-        navigation.push(to: vc)
+        guard let navi = navigation  else { return  }
+        guard navi.controllers.count < 4 else {
+            navi.pop()
+            return
+        }
+        let vc = ViewController()
+        navi.push(to: ViewController())
+        
     }
     func randomColor() -> NSColor {
         let red = CGFloat(arc4random_uniform(256)) / 255.0

@@ -54,5 +54,10 @@ extension MBAnimation {
         _ma(ani: ani , from: value, by: nil, to: nil)
         return ani
     }
+   class func mbMoveYFrom(value : Float) -> CABasicAnimation{
+        let ani = mAFrom(category: .positionY)
+        _ma(ani: ani , from: value, by: nil, to: nil)
+        return ani
+    }
     
 }
