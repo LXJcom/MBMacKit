@@ -17,14 +17,14 @@ class ViewController: NSViewController {
     }
     override func mouseUp(with event: NSEvent) {
         super.mouseUp(with: event)
-        guard let navi = navigation  else { return  }
-        guard navi.controllers.count < 4 else {
-            navi.pop()
-            return
-        }
-        let vc = ViewController()
-        navi.push(to: ViewController())
-        
+//        guard let navi = navigation  else { return  }
+//        guard navi.controllers.count < 4 else {
+//            navi.pop()
+//            return
+//        }
+//        let vc = ViewController()
+//        navi.push(to: ViewController())
+        MBTipView.showTitle("title" ,positionView: self.view)
     }
     func randomColor() -> NSColor {
         let red = CGFloat(arc4random_uniform(256)) / 255.0

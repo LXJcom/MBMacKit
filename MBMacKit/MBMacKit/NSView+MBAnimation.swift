@@ -56,7 +56,7 @@ extension CALayer {
         ani.duration = duration!
         add(ani, forKey: nil)
     }
-    func moveY(from value : Float , by byValue : Float? , toValue : Float? , duration : CFTimeInterval? = kMBRecommondAnimationDuration){
+    func moveY(from value : Float? , by byValue : Float? , toValue : Float? , duration : CFTimeInterval? = kMBRecommondAnimationDuration){
         let ani : CAAnimation = MBAnimation.mbMoveYFrom(value: value, byValue: byValue, toValue: toValue)
         ani.duration = duration!
         add(ani, forKey: nil)
