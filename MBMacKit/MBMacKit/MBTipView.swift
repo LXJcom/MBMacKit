@@ -7,7 +7,7 @@
 
 import Foundation
 import AppKit
-struct TipViewKey {
+public struct TipViewKey {
     public enum TipViewAlignment : Hashable {
         case top
         case middle
@@ -21,7 +21,7 @@ struct TipViewKey {
         self.aligment = aligment
     }
 }
-class MBTipView : NSObject {
+public class MBTipView : NSObject {
     static private var tipViewArr : [(String,TipViewKey?)] = []
     static private var tipView : SCTipView?
     static private var currentTipKey : TipViewKey?
